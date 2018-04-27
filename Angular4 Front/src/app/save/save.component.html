@@ -1,0 +1,12 @@
+<div>
+<form [formGroup]="rForm" (ngSubmit)="submitform(rForm.value)">
+  <!-- <form (submit)=submitform()> -->
+  <label for="name">Name:</label>
+  <input type="text" formControlName="name">
+  <label for="age">Age:</label>
+  <input type="text" formControlName="age">
+  <label for="id">UserId:</label>
+  <input type="text" formControlName="id">
+  <button type="submit">SaveData</button>
+  </form>
+</div>

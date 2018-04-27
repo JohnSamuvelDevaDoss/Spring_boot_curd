@@ -1,0 +1,24 @@
+<table border="1">
+    <thead >
+    <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>age</th>
+    <th>update</th>
+    <th>delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let person of people">
+    <td>{{person.id}}</td>
+    <td>{{person.name}}</td>
+    <td>{{person.age}}</td>
+    <td><a [routerLink]="['editsub']" [queryParams]="{id: person.id}"  class="w3-button" >Update</a></td>
+    <td><a (click)="Deletemethod(person.id)" class="w3-button" >Delete</a></td>
+    </tr>
+    </tbody>
+</table>
+  
+  <div>
+  <router-outlet></router-outlet>
+ </div>

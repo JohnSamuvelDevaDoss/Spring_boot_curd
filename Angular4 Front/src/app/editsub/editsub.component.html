@@ -1,0 +1,12 @@
+<div>
+<form [formGroup]="rForm" (ngSubmit)="Updatemethod(rForm.value)">
+  <!-- <form (submit)=submitform()> -->
+  <label for="name">Name:</label>
+  <input type="text" [(ngModel)]='ppl.name' formControlName="name">
+  <label for="age">Age:</label>
+  <input type="text" [(ngModel)]='ppl.age' formControlName="age">
+  <label for="id">UserId:</label>
+  <input type="text" [(ngModel)]='ppl.id' formControlName="id">
+  <button type="submit">SaveData</button>
+  </form>
+</div>
